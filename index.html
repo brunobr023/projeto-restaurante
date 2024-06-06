@@ -71,15 +71,15 @@
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <img class="img-logo" src="./src/files/assets/brand/restaurante_logo.png" alt="Logo Restaurante">
-            <span class="fs-4">Restaurante Ramiro</span>
+            <span class="fs-4">Restaurante Fogão a Gas</span>
           </a>
     
           <ul class="nav nav-pills">
             <li class="nav-item"><a href="#" class="nav-link" id="current_page" aria-current="page">Principal</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Ajuda e Suporte</a></li>
-            <li class="nav-item"><a href="#" class="nav-link active">Carrinho</a></li>
+            <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+            <li class="nav-item"><a href="sobrenos.html" class="nav-link">Sobre nós</a></li>
+            <li class="nav-item"><a href="suporte.html" class="nav-link">Ajuda e Suporte</a></li>
+            <li class="nav-item"><a href="carrinho.html" class="nav-link active">Carrinho</a></li>
           </ul>
         </header>
       </div>
@@ -203,16 +203,17 @@
           </div>
         </div>
       </main>
-      /*VLibras Implementado*/
-      <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+      <div>
+        <div vw class="enabled">
+          <div vw-access-button class="active"></div>
+          <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+          </div>
         </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+          new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
       </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
 </body>
 </html>
