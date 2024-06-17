@@ -159,3 +159,9 @@
 .Beef-Kabobs,-beef-skewers,-marinated-steak-pieces-to-infuse-with-extra-flavour-and-tenderise-3-hsla { color: hsla(22, 96, 43, 1); }
 .Beef-Kabobs,-beef-skewers,-marinated-steak-pieces-to-infuse-with-extra-flavour-and-tenderise-4-hsla { color: hsla(0, 96, 17, 1); }
 .Beef-Kabobs,-beef-skewers,-marinated-steak-pieces-to-infuse-with-extra-flavour-and-tenderise-5-hsla { color: hsla(0, 96, 7, 1); }
+
+@media (min-width: 1025px) {
+  .h-custom {
+  height: 100vh !important;
+  }
+  }
