@@ -1,3 +1,12 @@
+body{
+  background-color: #F2D194;
+}
+@media (max-width: 798px)  {
+  .carousel-image{
+    width: 100%;
+    height: auto;
+  }
+}
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -32,7 +41,7 @@
     fill: currentColor;
   }
   .btn-bd-primary {
-    --bd-violet-bg: #2cc6f9;
+    --bd-violet-bg: #260101;
     --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
     --bs-btn-font-weight: 600;
@@ -40,11 +49,11 @@
     --bs-btn-bg: var(--bd-violet-bg);
     --bs-btn-border-color: var(--bd-violet-bg);
     --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #2850e0;
+    --bs-btn-hover-bg: #000000;
     --bs-btn-hover-border-color: #28e0b5;
     --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
     --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #3623c8;
+    --bs-btn-active-bg: #000000;
     --bs-btn-active-border-color: #0064a7;
   }
 
