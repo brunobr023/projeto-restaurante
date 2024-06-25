@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./src/assets/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./src/assets/dist/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -94,13 +96,13 @@
                     <thead>
                       <tr>
                         <th scope="col" class="h5">Lista de Itens</th>
-                        <th scope="col">Descrição</th>
-                        <th scope="col">Quantidade</th>
+                        <th scope="col" class="descricao-header">Descrição</th>
+                        <th scope="col" >Quantidade</th>
                         <th scope="col">Valor</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr >
                         <th scope="row">
                           <div class="d-flex align-items-center">
                             <img src="./src/assets/brand/frango_Inicial1b.png" class="img-fluid rounded-3"
@@ -112,6 +114,76 @@
                           </div>
                         </th>
                         <td class="align-middle">
+                          <p class="mb-0 descricao-item" style="font-weight: 500;">Arrox, Frango, Queijo, molho de tomate.</p>
+                        </td>
+                        <td class="align-middle">
+                          <div class="d-flex flex-row">
+                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+        
+                            <input id="form1" min="0" max="9" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" style="width: 50px;" />
+        
+                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <p class="mb-0" style="font-weight: 500;">R$19,99</p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">
+                          <div class="d-flex align-items-center">
+                            <img src="./src/assets/brand/frango_Inicial1b.png" class="img-fluid rounded-3"
+                              style="width: 120px;" alt="Book">
+                            <div class="flex-column ms-4">
+                              <p class="mb-2">Frango a Parmegiana + Coca 2L</p>
+                              <p class="mb-0">Sem adicionais</p>
+                            </div>
+                          </div>
+                        </th>
+                        <td class="align-middle descricao-item">
+                          <p class="mb-0 text-phone" style="font-weight: 500;">Arrox, Frango, Queijo, molho de tomate.</p>
+                        </td>
+                        <td class="align-middle">
+                          <div class="d-flex flex-row">
+                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+        
+                            <input id="form1" min="0" max="9" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" style="width: 50px;" />
+        
+                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                        </td>
+                        <td class="align-middle">
+                          <p class="mb-0" style="font-weight: 500;">R$19,99</p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">
+                          <div class="d-flex align-items-center">
+                            <img src="./src/assets/brand/frango_Inicial1b.png" class="img-fluid rounded-3"
+                              style="width: 120px;" alt="Book">
+                            <div class="flex-column ms-4">
+                              <p class="mb-2">Frango a Parmegiana + Coca 2L</p>
+                              <p class="mb-0">Sem adicionais</p>
+                            </div>
+                          </div>
+                        </th>
+                        <td class="align-middle descricao-item">
                           <p class="mb-0" style="font-weight: 500;">Arrox, Frango, Queijo, molho de tomate.</p>
                         </td>
                         <td class="align-middle">
@@ -146,77 +218,7 @@
                             </div>
                           </div>
                         </th>
-                        <td class="align-middle">
-                          <p class="mb-0" style="font-weight: 500;">Arrox, Frango, Queijo, molho de tomate.</p>
-                        </td>
-                        <td class="align-middle">
-                          <div class="d-flex flex-row">
-                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                              <i class="fas fa-minus"></i>
-                            </button>
-        
-                            <input id="form1" min="0" max="9" name="quantity" value="1" type="number"
-                              class="form-control form-control-sm" style="width: 50px;" />
-        
-                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                              <i class="fas fa-plus"></i>
-                            </button>
-                          </div>
-                        </td>
-                        <td class="align-middle">
-                          <p class="mb-0" style="font-weight: 500;">R$19,99</p>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <th scope="row">
-                          <div class="d-flex align-items-center">
-                            <img src="./src/assets/brand/frango_Inicial1b.png" class="img-fluid rounded-3"
-                              style="width: 120px;" alt="Book">
-                            <div class="flex-column ms-4">
-                              <p class="mb-2">Frango a Parmegiana + Coca 2L</p>
-                              <p class="mb-0">Sem adicionais</p>
-                            </div>
-                          </div>
-                        </th>
-                        <td class="align-middle">
-                          <p class="mb-0" style="font-weight: 500;">Arrox, Frango, Queijo, molho de tomate.</p>
-                        </td>
-                        <td class="align-middle">
-                          <div class="d-flex flex-row">
-                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                              <i class="fas fa-minus"></i>
-                            </button>
-        
-                            <input id="form1" min="0" max="9" name="quantity" value="1" type="number"
-                              class="form-control form-control-sm" style="width: 50px;" />
-        
-                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                              <i class="fas fa-plus"></i>
-                            </button>
-                          </div>
-                        </td>
-                        <td class="align-middle">
-                          <p class="mb-0" style="font-weight: 500;">R$19,99</p>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <th scope="row">
-                          <div class="d-flex align-items-center">
-                            <img src="./src/assets/brand/frango_Inicial1b.png" class="img-fluid rounded-3"
-                              style="width: 120px;" alt="Book">
-                            <div class="flex-column ms-4">
-                              <p class="mb-2">Frango a Parmegiana + Coca 2L</p>
-                              <p class="mb-0">Sem adicionais</p>
-                            </div>
-                          </div>
-                        </th>
-                        <td class="align-middle">
+                        <td class="align-middle descricao-item">
                           <p class="mb-0" style="font-weight: 500;">Arrox, Frango, Queijo, molho de tomate.</p>
                         </td>
                         <td class="align-middle">
@@ -243,7 +245,7 @@
                   </table>
                 </div>
         
-                <div class="card shadow-2-strong mb-5 mb-lg-0" style="border-radius: 16px;">
+                <div class="card shadow-2-strong mb-5 mb-lg-0" style="border-radius: 20px; background-color: #26010124;">
                   <div class="card-body p-4">
         
                     <div class="row">
@@ -256,8 +258,7 @@
                             </div>
                             <div class="rounded border w-100 p-3">
                               <p class="d-flex align-items-center mb-0">
-                                <i class="fab fa-cc-mastercard fa-2x text-body pe-2"></i>Credit
-                                Card
+                                <i class="fab fa-cc-mastercard fa-2x text-body pe-2"></i>Cartão de Credito
                               </p>
                             </div>
                           </div>
@@ -268,7 +269,7 @@
                             </div>
                             <div class="rounded border w-100 p-3">
                               <p class="d-flex align-items-center mb-0">
-                                <i class="fab fa-cc-visa fa-2x fa-lg text-body pe-2"></i>Debit Card
+                                <i class="fab fa-cc-visa fa-2x fa-lg text-body pe-2"></i>Cartão de Debito
                               </p>
                             </div>
                           </div>
@@ -279,9 +280,10 @@
                             </div>
                             <div class="rounded border w-100 p-3">
                               <p class="d-flex align-items-center mb-0">
-                                <i class="fab fa-cc-paypal fa-2x fa-lg text-body pe-2"></i>PayPal
+                                <i class="fab fa-cc-paypal fa-2x fa-lg text-body pe-2" name="pix" id="sim"></i>Pix
                               </p>
                             </div>
+                            
                           </div>
                         </form>
                       </div>
@@ -289,57 +291,87 @@
                         <div class="row">
                           <div class="col-12 col-xl-6">
                             <div data-mdb-input-init class="form-outline mb-4 mb-xl-5">
-                              <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
-                                placeholder="John Smith" />
-                              <label class="form-label" for="typeName">Name on card</label>
+                              <input type="text" class="form-control form-control-lg" siez="17"
+                                placeholder="Bruno Ramos" />
+                              <label class="form-label" for="typeName">Nome no Cartão</label>
                             </div>
         
                             <div data-mdb-input-init class="form-outline mb-4 mb-xl-5">
-                              <input type="text" id="typeExp" class="form-control form-control-lg" placeholder="MM/YY"
-                                size="7" id="exp" minlength="7" maxlength="7" />
-                              <label class="form-label" for="typeExp">Expiration</label>
+                              <input type="text" id="typeExp" class="form-control form-control-lg" placeholder="08/27"
+                                size="7" id="exp" minlength="5" maxlength="5" />
+                              <label class="form-label" for="typeExp">Data de Expiração</label>
+                            </div>
+                            <div data-mdb-input-init class="form-outline mb-4 mb-xl-5">
                             </div>
                           </div>
                           <div class="col-12 col-xl-6">
                             <div data-mdb-input-init class="form-outline mb-4 mb-xl-5">
-                              <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
-                                placeholder="1111 2222 3333 4444" minlength="19" maxlength="19" />
-                              <label class="form-label" for="typeText">Card Number</label>
+                              <input type="text"  class="form-control form-control-lg" sizes="17"
+                                placeholder="2910 2390 8822 0799" minlength="19" maxlength="19" />
+                              <label class="form-label" for="typeText">Numero do Cartão</label>
                             </div>
         
                             <div data-mdb-input-init class="form-outline mb-4 mb-xl-5">
-                              <input type="password" id="typeText" class="form-control form-control-lg"
+                              <input type="password"  class="form-control form-control-lg"
                                 placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
-                              <label class="form-label" for="typeText">Cvv</label>
+                              <label class="form-label" for="typeText">Codigo de Verificação (CVV)</label>
+                            </div>
+                            <div data-mdb-input-init class="form-outline mb-4 mb-xl-5">
+                              <input type="text" name="campix"  class="form-control form-control-lg" siez=""
+                                placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" />
+                              <label class="form-label" for="typeName">Chave Pix</label>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div class="col-lg-4 col-xl-3">
                         <div class="d-flex justify-content-between" style="font-weight: 500;">
-                          <p class="mb-2">Subtotal</p>
-                          <p class="mb-2">$23.49</p>
+                          <p class="mb-2">Itens Selecionados</p>
+                          <p class="mb-2">R$25,49</p>
                         </div>
         
                         <div class="d-flex justify-content-between" style="font-weight: 500;">
-                          <p class="mb-0">Shipping</p>
-                          <p class="mb-0">$2.99</p>
+                          <p class="mb-0">Taxa de Entrega</p>
+                          <p class="mb-0">R$9,99</p>
                         </div>
         
                         <hr class="my-4">
         
                         <div class="d-flex justify-content-between mb-4" style="font-weight: 500;">
-                          <p class="mb-2">Total (tax included)</p>
-                          <p class="mb-2">$26.48</p>
+                          <p class="mb-2">Total</p>
+                          <p class="mb-2">R$ 34,65</p>
                         </div>
         
                         <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block btn-lg">
                           <div class="d-flex justify-content-between">
-                            <span>Checkout</span>
-                            <span>$26.48</span>
+                            <span>Concluir -></span>
+                            <span>R$34,65</span>
                           </div>
                         </button>
-        
+                        <br>
+                        <br>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Duvidas com o Pagamento?
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Vamos tirar suas duvidas! </h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  TESTE
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
                       </div>
                     </div>
         
@@ -359,6 +391,7 @@
                 <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
               </a>
               <span class="mb-3 mb-md-0 text-body-secondary">&copy; FG Produtos Alimenticios LTDA - 2024</span>
+
             </div>
             <a href="#"><button type="button" class="btn btn-primary btn-sm px-4 me-md-2 fw-bold">Voltar ao topo</button></a>
             <ul class="nav col-md-4 justify-content-end d-flex">
@@ -370,6 +403,20 @@
           </footer>
         </div>
       </footer>
+      <script>
+        $(document).ready(function() {
+          $('#campix').hide();
+          // aqui um seletor por name, para pegar todos os radio buttons "devweb"
+          $('input:radio[name="pix"]').change(function() {
+            // aqui, this é o radio quem foi clicado, então basta comparar o valor com val()
 
+            if ($(this).val() == "sim") {
+                $('#campix').show();
+            } else {
+              $('#campix').hide();
+            }
+          });
+        });
+      </script>
 </body>
 </html>

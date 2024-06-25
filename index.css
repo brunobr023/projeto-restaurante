@@ -184,3 +184,12 @@ body{
 .number{
   align-items: center;
 }
+@media (max-width: 768px) {
+  .descricao-item{
+    visibility: hidden;
+     
+  }
+  .descricao-header{
+    visibility: hidden;
+  }
+}
